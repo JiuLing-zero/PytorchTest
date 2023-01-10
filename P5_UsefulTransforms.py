@@ -4,7 +4,17 @@ from PIL import Image
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 
-# tensorboard --logdir=logs --port=6007
+"""
+Author  :hfli11
+File    :P5_UsefulTransforms.py
+Project :PytorchTest
+Time    :2023/1/10 10:22
+Description transforms的一些方法的运用
+"""
+
+# 在Terminal里输入命令 : tensorboard --logdir=logs --port=6007
+# 访问 http://localhost:6007/
+# 如果writer写入了其他内容，直接刷新网页即可，网页会读取logs文件夹下的文件得到更新的内容
 
 img_path = "dataset/train/bees_image/196658222_3fffd79c67.jpg"
 img_pil = Image.open(img_path)
